@@ -1,0 +1,24 @@
+{
+  "name": "as-clock-time-get",
+  "version": "0.0.1",
+  "description": "An example of calling clock_time_get from wasi_unstable to show off wasm-transformer 's i64 lowering",
+  "main": "assembly/index.ts",
+  "scripts": {
+    "build": "asc assembly/index.ts -b build/optimized.wasm -t build/optimized.wat --sourceMap --validate --optimize --use abort=wasi_abort"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/torch2424/as-clock-time-get.git"
+  },
+  "author": "Aaron Turner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/torch2424/as-clock-time-get/issues"
+  },
+  "homepage": "https://github.com/torch2424/as-clock-time-get#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "as-wasi": "git+https://github.com/jedisct1/as-wasi.git",
+    "assemblyscript": "^0.9.0"
+  }
+}
